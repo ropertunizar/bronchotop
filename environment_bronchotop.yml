@@ -1,0 +1,19 @@
+name: bronchotop
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.22
+  - matplotlib=3.9.4
+  - numpy=2.0.2
+  - opencv=4.11.0
+  - pillow=11.1.0
+  - scikit-image=0.24.0
+  - scikit-learn=1.6.1
+  - scipy=1.13.1
+  - pip
+  - pip:
+      - bigtree==0.30.0
+      - ipyfilechooser==0.6.0
+      - torch==2.7.0
+      - torch-kmeans==0.2.0
+      - torchvision==0.22.0
