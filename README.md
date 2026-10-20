@@ -49,7 +49,7 @@ then activate environment
 ```conda activate bronchotop```
 
 ## Siamese network checkpoint
-Download checkpoints for siamese network trained our real and simulated sequences
+Download checkpoints for siamese network trained our real and simulated sequences [here](https://drive.google.com/drive/folders/1iMw_HVt2ZtEHfKLwnHundaQIPZCpDgFS?usp=sharing).
 
 ## BronchoTop Inference
 Run BronchoTop pipeline using
