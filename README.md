@@ -54,7 +54,7 @@ Download checkpoints for siamese network trained our real and simulated sequence
 ## BronchoTop Inference
 Run BronchoTop pipeline using
 
-```python bronchotop_main.py --sequence_path path/to/sequence  --data_type (sim or real)``
+```python bronchotop_main.py --sequence_path path/to/sequence  --data_type (sim or real)```
 
 Additionally, you can specify start and end frames for the processed sequence, as well as whether to use the final Switch Verification module or not.
 
