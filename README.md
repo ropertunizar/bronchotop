@@ -8,9 +8,9 @@ Remove any sections you do not need.
 <h3 align="center">IROS 2026</h3>
 
 <div align="center">
-  <a href="AUTHOR1_URL" target="_blank">Clara Tomasini</a><sup>1</sup>,
-  <a href="AUTHOR2_URL" target="_blank">Ana C. Murillo</a><sup>1</sup>,
-  <a href="AUTHOR3_URL" target="_blank">Luis Riazuelo</a><sup>1</sup>
+  <a href="https://github.com/ClaraTmsn" target="_blank">Clara Tomasini</a><sup>1</sup>,
+  <a href="https://github.com/anacmurillo" target="_blank">Ana C. Murillo</a><sup>1</sup>,
+  <a href=https://github.com/luisriazuelo" target="_blank">Luis Riazuelo</a><sup>1</sup>
 </div>
 
 <div align="center">
