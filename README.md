@@ -10,7 +10,7 @@ Remove any sections you do not need.
 <div align="center">
   <a href="https://github.com/ClaraTmsn" target="_blank">Clara Tomasini</a><sup>1</sup>,
   <a href="https://github.com/anacmurillo" target="_blank">Ana C. Murillo</a><sup>1</sup>,
-  <a href=https://github.com/luisriazuelo" target="_blank">Luis Riazuelo</a><sup>1</sup>
+  <a href="https://github.com/luisriazuelo" target="_blank">Luis Riazuelo</a><sup>1</sup>
 </div>
 
 <div align="center">
