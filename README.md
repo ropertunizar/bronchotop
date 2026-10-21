@@ -4,74 +4,99 @@ Replace placeholders like <PROJECT_NAME>, <PAPER_TITLE>, <YEAR>, <HOMEPAGE_URL>,
 Remove any sections you do not need.
 -->
 
-<h1 align="center">PROJECT_NAME</h1>
-<h3 align="center">VENUE_AND_YEAR</h3>
+<h1 align="center">BronchoTop: Bronchoscopy Navigation via RGB-Only Topological Localization</h1>
+<h3 align="center">IROS 2026</h3>
 
 <div align="center">
-  <a href="AUTHOR1_URL" target="_blank">AUTHOR1_NAME</a><sup>1,*</sup>,
-  <a href="AUTHOR2_URL" target="_blank">AUTHOR2_NAME</a><sup>1,2,*</sup>,
-  <a href="AUTHOR3_URL" target="_blank">AUTHOR3_NAME</a><sup>2</sup>,
-  <a href="AUTHOR4_URL" target="_blank">AUTHOR4_NAME</a><sup>1</sup>
+  <a href="AUTHOR1_URL" target="_blank">Clara Tomasini</a><sup>1</sup>,
+  <a href="AUTHOR2_URL" target="_blank">Ana C. Murillo</a><sup>1</sup>,
+  <a href="AUTHOR3_URL" target="_blank">Luis Riazuelo</a><sup>1</sup>
 </div>
 
 <div align="center">
-  <sup>1</sup>AFFILIATION1, <sup>2</sup>AFFILIATION2
+  <sup>1</sup>Universidad de Zaragoza
 </div>
 
 <div align="center">
-  <sup>*</sup><i>Equal contribution</i>
-</div>
-
-<div align="center">
-  <a href="HOMEPAGE_URL"><strong>🌍 Homepage</strong></a> |
-  <a href="DATASET_OR_BENCHMARK_URL"><strong>🤗 Benchmark / Dataset</strong></a> |
-  <a href="ARXIV_OR_PAPER_URL"><strong>📝 Paper</strong></a> |
-  <a href="DEMO_URL"><strong>🎬 Demo</strong></a> |
-  <a href="MODEL_CARD_URL"><strong>🧠 Models</strong></a>
+  <a href="https://sites.google.com/unizar.es/bronchotop"><strong>🌍 Homepage</strong></a> |
+  <a href="DATASET_OR_BENCHMARK_URL"><strong>🤗 Dataset</strong></a> |
+  <a href="https://arxiv.org/abs/2609.28328"><strong>📝 Paper</strong></a> |
+  <a href="DEMO_URL"><strong>🎬 Demo</strong></a> 
 </div>
 
 ---
 
 ## 🔔 News
-- 🆕 MM/YYYY: Code released.
-- 🥳 MM/YYYY: Paper accepted at VENUE.
-- ⭐ MM/YYYY: Benchmark / dataset released.
-- 🔧 MM/YYYY: Added support for MODEL/FEATURE.
-- ⚠️ MM/YYYY: Breaking change: WHAT_CHANGED.
-
+<!-- - ⭐ 10/2026: Benchmark / dataset released. -->
+- 🆕 10/2026: Code released.
+- 🥳 09/2026: Paper accepted at IROS.
 ---
 
 ## 📖 Description
-This template repository includes a project webpage template located in `docs/index.html`. When you make this repository public, GitHub Pages will automatically generate and host your project webpage at:
-
-```
-https://ropertunizar.github.io/baserepo/
-```
-
-To customize the webpage:
-1. Edit `docs/index.html` and replace the placeholder content (Author1, Author2, Project Title, etc.) with your actual project information
-2. Add your figures and images to the `docs/img/` folder
-3. Update the CSS in `docs/css/main.css` if you want to customize the styling
-4. Make the repository public
-5. Go to Settings/Pages, select branch -> main and folder -> /docs
-6. Your project webpage will have this link: `https://ropertunizar.github.io/your_repo_name/`
+**BronchoTop** is the first published framework including both the localization algorithms as well as all the real data used, together with code to generate additional simulations, encouraging and facilitating further developments and benchmarking. The results highlight BronchoTop's potential to enhance procedural safety, efficiency and accessibility in clinical and robotic bronchoscopy.
 
 ## 🛠️ Requirements
+The software has been tested on **Ubuntu 20.04** and uses [Python](https://www.python.org). **Required 3.X**.
 
+```bash
+# Clone the repository
+git clone https://github.com/ropertunizar/bronchotop.git
+cd bronchotop
+
+# Create a virtual environment
+conda env create -f environment_bronchotop.yml
+conda activate bronchotop
+```
 ## 🚀 Usage
+# 1. Data preparation
+
+Create folder ```datasets``` and place your data in it.
+Each sequence needs to be stored in its own folder as images and should be organised as follows:
+
+```
+ datasets
+    ├── sequence1
+    │       ├── Class1
+    │       │   ├── img1.png
+    │       │   ├── img2.png
+    │       │   └── img3.png
+    │       └── Class2
+    │           ├── img4.png
+    │           ├── img5.png
+    │           └── img6.png
+    └── sequence2
+```
+
+
+BronchoTop dataset can be downloaded from XXXX (TO-DO).
+
+# 2. Siamese network checkpoint
+   
+Download checkpoints for siamese network trained our real and simulated sequences [here](https://drive.google.com/drive/folders/1iMw_HVt2ZtEHfKLwnHundaQIPZCpDgFS?usp=sharing). 
+
+# 3. BronchoTop Inference
+Run BronchoTop pipeline using
+
+```python bronchotop_main.py --sequence_path path/to/sequence  --data_type (sim or real)```
+
+Additionally, you can specify start and end frames for the processed sequence, as well as whether to use the final Switch Verification module or not.
+
+Parameters such as similarity threshold can be adjusted directly in ```bronchotop_main.py```.
 
 ## 📜 License
- Discuss with your supervisor the license that you want to set and include the licenses of any previous repo in which your code was inspired.
+
+This work is released under AGPL-3.0 license.
  
 ## 📝 Citation
 ```bibtex
-@inproceedings{CITATION_KEY,
-  title={PAPER_TITLE},
-  author={AUTHORS},
-  booktitle={VENUE},
-  year={YEAR}
+@inproceedings{tomasini2026bronchotop,
+  title={BronchoTop: Bronchoscopy Navigation via RGB-Only Topological Localization},
+  author={Tomasini, Clara and Murillo, Ana C. and Riazuelo, Luis},
+  booktitle={IROS},
+  year={2026}
 }
 ```
 
 ## 🙏 Acknowledgements
-Ask to your supervisor.
+This work was partially funded by projectT45_23R, by grants PID2022-139615OB-I00, AIA2025-163563-C31, PID2024-159284NB-I00,funded by MCIN/AEI/10.13039/501100011033 and ERDF.
+
