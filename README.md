@@ -28,7 +28,7 @@ Remove any sections you do not need.
 
 ## 🔔 News
 <!-- - ⭐ 10/2026: Benchmark / dataset released. -->
-- 🆕 10/2026: Code released.
+- 🆕 10/2026: Code and data released.
 - 🥳 09/2026: Paper accepted at IROS.
 ---
 
