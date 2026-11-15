@@ -68,7 +68,7 @@ Each sequence needs to be stored in its own folder as images and should be organ
 ```
 
 
-BronchoTop dataset can be downloaded from XXXX (TO-DO).
+BronchoTop dataset can be downloaded [here](https://www.synapse.org/Synapse:syn78583281/wiki/644162).
 
 # 2. Siamese network checkpoint
    
