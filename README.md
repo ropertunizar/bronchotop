@@ -72,7 +72,7 @@ BronchoTop dataset can be downloaded [here](https://www.synapse.org/Synapse:syn7
 
 # 2. Siamese network checkpoint
    
-Download checkpoints for siamese network trained our real and simulated sequences [here](https://drive.google.com/drive/folders/1iMw_HVt2ZtEHfKLwnHundaQIPZCpDgFS?usp=sharing). 
+Download checkpoints for siamese network trained our real and simulated sequences [here](https://unizares-my.sharepoint.com/:f:/g/personal/794524_unizar_es/IgDoCR4cLafnTb262vz1t66VAbZTJ8y8V2gbqHOaFdVFe9A?e=OsokCN). 
 
 # 3. BronchoTop Inference
 Run BronchoTop pipeline using
